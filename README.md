@@ -2,9 +2,9 @@ Dropwizard Websocket Support
 ==========
 This project is forked from [LivePersonInc/dropwizard-websockets](https://github.com/LivePersonInc/dropwizard-websockets) with the sole gole fo keeping up with upstream Dropwizard releases, namely 1.3.x and 2.0.x.
 
-[![Build Status](https://travis-ci.org/defer/dropwizard-websockets.svg?branch=release%2F1.3.x)](https://travis-ci.org/defer/dropwizard-websockets)
+[![Build Status](https://travis-ci.org/defer/dropwizard-websockets.svg?branch=release%2F2.0.x)](https://travis-ci.org/defer/dropwizard-websockets)
 [![Jitpack](https://jitpack.io/v/defer/dropwizard-websockets.svg)](https://jitpack.io/#defer/dropwizard-websockets/)
-[![Coverage Status](https://coveralls.io/repos/defer/dropwizard-websockets/badge.svg?branch=release%2F1.3.x&service=github)](https://coveralls.io/github/defer/dropwizard-websockets?branch=release%2F1.3.x)
+[![Coverage Status](https://coveralls.io/repos/defer/dropwizard-websockets/badge.svg?branch=release%2F2.0.x&service=github)](https://coveralls.io/github/defer/dropwizard-websockets?branch=release%2F2.0.x)
 
 A [3rd party Dropwizard bundle](http://modules.dropwizard.io/thirdparty/), that enhances [Dropwizard](http://www.dropwizard.io) capabilities to support not only JAX-RS resources but also websockets endpoints using the JSR-356 API.
 
