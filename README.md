@@ -1,8 +1,10 @@
 Dropwizard Websocket Support
 ==========
-[![Build Status](https://api.travis-ci.org/LivePersonInc/dropwizard-websockets.svg?branch=master)](https://travis-ci.org/LivePersonInc/dropwizard-websockets)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.liveperson/dropwizard-websockets/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.liveperson/dropwizard-websockets)
-[![Coverage Status](https://coveralls.io/repos/LivePersonInc/dropwizard-websockets/badge.svg?branch=master&service=github)](https://coveralls.io/github/LivePersonInc/dropwizard-websockets?branch=master)
+This project is forked from [LivePersonInc/dropwizard-websockets](https://github.com/LivePersonInc/dropwizard-websockets) with the sole gole fo keeping up with upstream Dropwizard releases, namely 1.3.x and 2.0.x.
+
+[![Build Status](https://travis-ci.org/defer/dropwizard-websockets.svg?branch=release%2F1.3.x)](https://travis-ci.org/defer/dropwizard-websockets)
+[![Jitpack](https://jitpack.io/v/defer/dropwizard-websockets.svg)](https://jitpack.io/#defer/dropwizard-websockets/)
+[![Coverage Status](https://coveralls.io/repos/defer/dropwizard-websockets/badge.svg?branch=release%2F1.3.x&service=github)](https://coveralls.io/github/defer/dropwizard-websockets?branch=release%2F1.3.x)
 
 A [3rd party Dropwizard bundle](http://modules.dropwizard.io/thirdparty/), that enhances [Dropwizard](http://www.dropwizard.io) capabilities to support not only JAX-RS resources but also websockets endpoints using the JSR-356 API.
 
@@ -13,17 +15,39 @@ The websockets endpoints will be instrumented the same way Dropwizards does with
 * Counters and rate meters for messages reviewed by the endpoint.
 * Timers and statistics for session duration.
 
-Maven Dependency
+Maven
 ---
-Add the Maven dependency: 
+Add the Maven dependency:
 
 ```xml
+<repositories>
+  <repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+  </repository>
+</repositories>
 <dependency>
-  <groupId>com.liveperson</groupId>
+  <groupId>com.github.defer</groupId>
   <artifactId>dropwizard-websockets</artifactId>
   <version></version>
 </dependency>
 ```
+
+Gradle
+---
+Add the Gradle dependency: 
+
+```groovy
+allprojects {
+  repositories {
+    ...
+    maven { url 'https://jitpack.io' }
+  }
+}
+
+implementation 'com.github.defer:dropwizard-websockets:<version>'
+```
+
 
 Usage
 ---
@@ -55,7 +79,7 @@ public void run(Configuration configuration, Environment environment) throws Exc
 ```
 
 That's all.
-A full example can be found in the [tests classes](https://github.com/LivePersonInc/dropwizard-websockets/blob/master/src/test/java/io/dropwizard/websockets/MyApp.java).
+A full example can be found in the [tests classes](https://github.com/defer/dropwizard-websockets/blob/master/src/test/java/io/dropwizard/websockets/MyApp.java).
 
 Metrics
 ---
